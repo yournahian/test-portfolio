@@ -1,0 +1,129 @@
+/* General Setup */
+body {
+    background-color: #000000; /* Dark Mode Background */
+    color: #ffffff;           /* White Text */
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.profile-img {
+    width: 180px;         /* Size of your photo */
+    height: 180px;        /* Keep width and height same for a circle */
+    border-radius: 50%;   /* This makes it a circle */
+    object-fit: cover;    /* This prevents the image from stretching */
+    border: 3px solid #4facfe; /* Adds a themed border around your photo */
+    margin-bottom: 20px;
+}
+
+/* Navbar (Exactly like your lesson) */
+ul {
+     list-style-type: none;
+     margin: 0px;
+     padding: 0px;
+     overflow: hidden;
+     background-color: #111111;
+     border-bottom: 1px solid #222;
+}
+
+ul li {
+  float: right;
+}
+
+ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul li a:hover {
+  background: linear-gradient(90deg, #00f2fe, #4facfe);
+  color: #000;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #080808;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.highlight {
+    background: linear-gradient(90deg, #00f2fe, #4facfe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* About Section */
+.about-section {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    padding: 20px;
+    font-size: 18px;
+    color: #cccccc;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Skills Container (Flexbox from your lesson) */
+.skills-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap; /* Makes it look good on mobile */
+}
+
+/* Skill Card (Based on your Product Card) */
+.skill-card {
+    background: #111111;
+    width: 280px;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #222;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    border-color: #4facfe;
+    transform: translateY(-5px);
+}
+
+.skill-card h3 {
+    margin-bottom: 15px;
+    color: #00f2fe;
+}
+
+/* Button (Using your requested Gradient) */
+.skill-card button {
+    background: linear-gradient(90deg, #00f2fe, #4facfe);
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.skill-card button:hover {
+    opacity: 0.8;
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+    color: #555;
+}
